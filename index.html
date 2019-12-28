@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar Application</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/deleteDayEvent.js" defer></script>
+    <script src="./scripts/showDayEvents.js" defer></script>
+    <script src="./scripts/addDayEvent.js" defer></script>
+    <script src="./scripts/event.js" defer></script>
+    <script src="./scripts/day.js" defer></script>
+    <script src="./scripts/calendar.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <table>
+            <caption id="calendar-title"></caption>
+            <thead>
+                <tr>
+                    <th>SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THUR</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+            </tbody>
+        </table>
+        <div id="single-day">
+            <div id="single-day-title">No Day Selected</div>
+            <div id="single-day-list">
+                <ul id="single-day-events">
+
+                </ul>
+            <div id="option-btns">
+                <button id="addBtn" onclick="addDayEvent()">
+                    Add new event
+                </button>
+                <button id="delBtn" onclick="deleteDayEvent()">
+                    Delete event
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

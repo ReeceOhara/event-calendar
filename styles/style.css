@@ -1,0 +1,59 @@
+table {
+    width: 50%;
+    float: left;
+}
+
+caption {
+    font-size: 3em;
+}
+
+tbody > tr > th {
+    padding: 1%;
+    font-size: 1.5em;
+}
+
+.day {
+    text-align: center;
+    padding: 1%;
+    font-size: 1.25em;
+}
+
+#single-day {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+#single-day-title {
+    font-size: 3em;
+    margin-top: 5%;
+}
+
+#single-day-list {
+    text-align: left;
+}
+
+#single-day-events > li:nth-child(odd) {
+    background-color: rgb(177, 177, 177);
+}
+
+#single-day-events > li:nth-child(even) {
+    background-color: white;
+}
+
+#single-day-events > li.selected {
+    background-color: orange;
+}
+
+#single-day-events {
+    font-size: 1.5em;
+    padding-left: 35%;
+    padding-right: 33%;
+    list-style-type: none;
+}
+
+#single-day-events > li {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
